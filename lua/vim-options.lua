@@ -23,7 +23,8 @@ vim.opt.undofile = true
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.textwidth = 80
+vim.opt.textwidth = 0
+vim.opt.wrap = true
 vim.opt.signcolumn = 'yes'
 vim.opt.colorcolumn = '81'
 
@@ -48,6 +49,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Exit insert mode' })
 
 vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
