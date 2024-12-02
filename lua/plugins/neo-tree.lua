@@ -36,6 +36,7 @@ return {
     },
     window = {
       mappings = {
+        ['\\'] = 'close_window',
         ['l'] = 'open',
         ['h'] = 'close_node',
         ['<space>'] = 'none',

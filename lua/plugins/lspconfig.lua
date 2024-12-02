@@ -101,10 +101,11 @@ return {
         --},
         gopls = {
           cmd = { 'gopls' },
-          filtypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+          filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
           capabilities = capabilities,
         },
         basedpyright = {
+          filetypes = { 'python' },
           capabilities = capabilities,
         },
         jsonls = { capabilities = capabilities },
