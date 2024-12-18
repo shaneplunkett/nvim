@@ -96,9 +96,9 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
       local servers = {
-        -- tsserver = {
-        -- capabilities = capabilities,
-        --},
+        ts_ls = {
+          capabilities = capabilities,
+        },
         gopls = {
           cmd = { 'gopls' },
           filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
@@ -107,6 +107,9 @@ return {
         basedpyright = {
           filetypes = { 'python' },
           capabilities = capabilities,
+        },
+        ruff = {
+          filetypes = { 'python' },
         },
         jsonls = { capabilities = capabilities },
         lua_ls = {
