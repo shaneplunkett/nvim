@@ -4,7 +4,6 @@ return {
     build = ':TSUpdate',
     opts = {
       ensure_installed = {
-        'tsx',
         'typescript',
         'javascript',
         'html',
@@ -22,6 +21,7 @@ return {
         'vim',
         'go',
         'python',
+        'astro',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
