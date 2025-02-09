@@ -115,7 +115,6 @@ return {
         'jsonlint',
         'lua-language-server',
         'luacheck',
-        'markdownlint',
         'prettier',
         'prettierd',
         'prisma-language-server',
