@@ -4,6 +4,7 @@ return {
     build = ':TSUpdate',
     opts = {
       ensure_installed = {
+        'php',
         'typescript',
         'javascript',
         'html',

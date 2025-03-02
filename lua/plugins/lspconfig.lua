@@ -77,6 +77,10 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
       local servers = {
+        intelephense = {
+          filetypes = { 'php' },
+          capabilities = capabilities,
+        },
         ts_ls = {
           capabilities = capabilities,
         },
@@ -88,9 +92,6 @@ return {
         basedpyright = {
           filetypes = { 'python' },
           capabilities = capabilities,
-        },
-        ruff = {
-          filetypes = { 'python' },
         },
         jsonls = { capabilities = capabilities },
         lua_ls = {

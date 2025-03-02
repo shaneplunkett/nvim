@@ -39,6 +39,7 @@ return {
         xml = { 'xmlformatter' },
         python = { 'ruff_fix', 'ruff_format', 'ruff_organize_imports' },
         go = { 'goimports-reviser', 'gofumpt', 'golines' },
+        php = { 'pint', 'php_cs_fixer', stop_after_first = true },
       },
     },
   },
