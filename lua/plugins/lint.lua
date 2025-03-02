@@ -14,6 +14,7 @@ return {
         javascriptreact = { 'eslint_d' },
         typescriptreact = { 'eslint_d' },
         json = { 'jsonlint' },
+        go = { 'golangcilint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,

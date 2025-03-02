@@ -57,6 +57,15 @@ return {
         ['P'] = { 'toggle_preview', config = { use_float = false } },
       },
     },
+    event_handlers = {
+      {
+        event = 'file_opened',
+        handler = function(file_path)
+          --auto close
+          require('neo-tree').close_all()
+        end,
+      },
+    },
     default_component_configs = {
       indent = {
         with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
